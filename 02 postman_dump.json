@@ -1,0 +1,163 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "83b0ecde-33a7-7244-7346-1b35e1fafe8e",
+			"name": "Tinder",
+			"description": "",
+			"order": [
+				"b5230902-05e5-e4de-5351-4f35409e9c7a",
+				"6a04de52-f5dd-3e2d-48d1-067f51d8cbf9",
+				"6f629efd-767e-149a-af7a-48d7310ce0f7"
+			],
+			"folders": [],
+			"folders_order": [],
+			"timestamp": 1609926353153,
+			"synced": false,
+			"remote_id": 0,
+			"owner": "224014",
+			"sharedWithTeam": false,
+			"subscribed": false,
+			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
+			"public": false,
+			"createdAt": 1609926353153,
+			"updatedAt": 1609928403164,
+			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
+			"requests": [
+				{
+					"id": "6a04de52-f5dd-3e2d-48d1-067f51d8cbf9",
+					"headers": "",
+					"headerData": [],
+					"url": "http://localhost:8001/tinder/cards",
+					"queryParams": [],
+					"pathVariables": {},
+					"pathVariableData": [],
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "83b0ecde-33a7-7244-7346-1b35e1fafe8e",
+					"data": null,
+					"dataMode": "params",
+					"name": "Get cards",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1609926591510,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "6f629efd-767e-149a-af7a-48d7310ce0f7",
+					"headers": "Content-Type: application/json\n",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"enabled": true
+						}
+					],
+					"url": "http://localhost:8001/tinder/cards",
+					"queryParams": [],
+					"pathVariables": {},
+					"pathVariableData": [],
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "83b0ecde-33a7-7244-7346-1b35e1fafe8e",
+					"data": "[\n\t{\n\t  \"name\": \"Elon Musk\",\n\t  \"imgUrl\":\n\t    \"https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f47d4de7637290765bce495%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D1398%26cropX2%3D3908%26cropY1%3D594%26cropY2%3D3102\"\n\t},\n\t{\n\t  \"name\": \"Jeff Bezos\",\n\t  \"imgUrl\":\n\t    \"https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5bb22ae84bbe6f67d2e82e05%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D560%26cropX2%3D1783%26cropY1%3D231%26cropY2%3D1455\"\n\t}\n]",
+					"dataMode": "raw",
+					"name": "Post cards",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1609928358825,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "b5230902-05e5-e4de-5351-4f35409e9c7a",
+					"headers": "",
+					"headerData": [],
+					"url": "http://localhost:8001",
+					"queryParams": [],
+					"preRequestScript": null,
+					"pathVariables": {},
+					"pathVariableData": [],
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1609926562393,
+					"name": "Sample",
+					"description": "",
+					"collectionId": "83b0ecde-33a7-7244-7346-1b35e1fafe8e",
+					"responses": []
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "88a5f4e8-0a1e-7289-bc6a-611084e82319",
+			"name": "Azure env",
+			"values": [
+				{
+					"enabled": true,
+					"key": "clientId",
+					"value": "6099e6ec-5237-4dfb-bae1-33f43f04842b",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "clientSecret",
+					"value": "cb5a57ce-1f82-446a-ac07-5274b082465e",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "resource",
+					"value": "https://management.azure.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "tenentId",
+					"value": "132203f6-2452-44db-99d7-a76da1218aab",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "subscriptionId",
+					"value": "be243305-d539-446a-b1ff-eebae510055e",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "azure-authorization",
+					"value": "SharedAccessSignature sr=http%3A%2F%2Fwebservices.wisenitsolutions.com%2Fapi%2FWisenCustomer%2FDeleteCustomer%3Fuid%3DS1%26custId%3D51&sig=t5qf7cjXBsFWfKbVDUw73QOYB8RlrnOBbr1vq%2FOVTCM%3D&se=1565268154&skn=DefaultFullSharedAccessSignature",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "current-date",
+					"value": "Thu, 08 Aug 2019 11:42:34 GMT",
+					"type": "text"
+				}
+			],
+			"timestamp": 1585285625126,
+			"synced": false
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}
